@@ -2,7 +2,7 @@
   "meta": {
     "app": "Powderlog",
     "schema_version": 1,
-    "updated_at": "2026-11-22T21:44+01:00",
+    "updated_at": "2026-11-22T21:56+01:00",
     "updated_by": "update_agent.py",
     "notes": "Statische Felder sind Näherungswerte und vom Agenten zu verifizieren. Live-Felder (null) werden vom Update-Agenten gefüllt. Nie Werte erfinden: unbekannt = null. Webcams: nur Verweise auf die Betreiberseiten (page_url), keine eingebetteten Bilder; image_url bleibt null, bis eine offizielle Bild-URL freigegeben ist.",
     "units": {
@@ -111,7 +111,7 @@
           "summit_cm": 2,
           "new_24h_cm": 0.5,
           "new_72h_cm": 2.9,
-          "updated_at": "2026-11-22T21:43+01:00"
+          "updated_at": "2026-11-22T21:55+01:00"
         }
       },
       "weather": {
@@ -121,7 +121,7 @@
         "gusts": 45.4,
         "freezing_level": 1700.0,
         "forecast_window": null,
-        "updated_at": "2026-11-22T21:43+01:00",
+        "updated_at": "2026-11-22T21:55+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -504,7 +504,7 @@
         "open": 4,
         "expected_total": 26,
         "partial": false,
-        "fetched_at": "2026-11-22T21:44+01:00",
+        "fetched_at": "2026-11-22T21:56+01:00",
         "stale": false,
         "error": null,
         "note": "Status aus Symbolen der Seite; unbekannte Symbole werden als 'unknown' gespeichert.",
@@ -609,7 +609,7 @@
             "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-22T21:43+01:00"
+        "updated_at": "2026-11-22T21:55+01:00"
       }
     },
     {
@@ -658,7 +658,7 @@
           }
         ],
         "new_reported_cm": null,
-        "fetched_at": "2026-11-22T21:43+01:00",
+        "fetched_at": "2026-11-22T21:55+01:00",
         "source_name": null,
         "source_note": null,
         "error": null,
@@ -672,7 +672,7 @@
             "summit_cm": 0,
             "new_reported_cm": 0,
             "measured_at": null,
-            "fetched_at": "2026-11-22T21:43+01:00",
+            "fetched_at": "2026-11-22T21:55+01:00",
             "stale": false,
             "error": null
           },
@@ -685,7 +685,7 @@
             "summit_cm": null,
             "new_reported_cm": null,
             "measured_at": null,
-            "fetched_at": "2026-11-22T21:43+01:00",
+            "fetched_at": "2026-11-22T21:55+01:00",
             "stale": false,
             "error": null
           }
@@ -696,7 +696,7 @@
           "summit_cm": 21,
           "new_24h_cm": 6.8,
           "new_72h_cm": 30.4,
-          "updated_at": "2026-11-22T21:43+01:00"
+          "updated_at": "2026-11-22T21:55+01:00"
         }
       },
       "weather": {
@@ -710,7 +710,7 @@
           "to": "2026-11-23T16:00",
           "max_gust": 36.4
         },
-        "updated_at": "2026-11-22T21:43+01:00",
+        "updated_at": "2026-11-22T21:55+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -1313,7 +1313,7 @@
         "open": 0,
         "expected_total": 85,
         "partial": true,
-        "fetched_at": "2026-11-22T21:44+01:00",
+        "fetched_at": "2026-11-22T21:56+01:00",
         "stale": false,
         "error": null,
         "note": null,
@@ -1419,7 +1419,7 @@
             "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-22T21:43+01:00"
+        "updated_at": "2026-11-22T21:55+01:00"
       }
     },
     {
@@ -1453,7 +1453,7 @@
           }
         ],
         "new_reported_cm": 0,
-        "fetched_at": "2026-11-22T21:43+01:00",
+        "fetched_at": "2026-11-22T21:55+01:00",
         "source_name": "Tirol Werbung (Sölden)",
         "source_note": null,
         "error": null,
@@ -1462,15 +1462,15 @@
             "name": "Village view",
             "area": "Sölden",
             "elevation": 1377,
-            "temp_c": 2.0,
+            "temp_c": 1.8,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:30+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           },
           {
             "name": "Gaislachkogl",
             "area": "Gaislachkogl",
             "elevation": 3048,
-            "temp_c": -7.7,
+            "temp_c": -7.9,
             "snow_cm": null,
             "measured_at": "2026-11-22T16:34+01:00"
           },
@@ -1478,17 +1478,17 @@
             "name": "Gaislachkogl Mid Station",
             "area": "Gaislachkogl",
             "elevation": 2174,
-            "temp_c": -3.5,
+            "temp_c": -3.7,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:30+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           },
           {
             "name": "Hochsölden",
             "area": "Giggijoch",
             "elevation": 2077,
-            "temp_c": -1.9,
+            "temp_c": -2.0,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:20+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           },
           {
             "name": "Giggijoch",
@@ -1502,31 +1502,31 @@
             "name": "Schwarzkogl Valley",
             "area": "Giggijoch",
             "elevation": 2580,
-            "temp_c": -4.3,
+            "temp_c": -4.1,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:30+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           },
           {
             "name": "Seekogl",
             "area": "Giggijoch",
             "elevation": 2662,
-            "temp_c": -7.2,
-            "snow_cm": 38.5,
+            "temp_c": -7.4,
+            "snow_cm": 38.9,
             "measured_at": "2026-11-22T16:35+01:00"
           },
           {
             "name": "Rettenbach Glacier",
             "area": "Glacier",
             "elevation": 2680,
-            "temp_c": -5.0,
+            "temp_c": -5.2,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:20+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           },
           {
             "name": "Schwarze Schneidbahn Middle Station",
             "area": "Glacier",
             "elevation": 3000,
-            "temp_c": -8.1,
+            "temp_c": -8.2,
             "snow_cm": null,
             "measured_at": "2026-11-22T16:35+01:00"
           },
@@ -1534,30 +1534,30 @@
             "name": "Schwarze Schneidbahn Mid Station",
             "area": "Glacier",
             "elevation": 3000,
-            "temp_c": -8.1,
+            "temp_c": -8.2,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:20+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           },
           {
             "name": "Tiefenbach Glacier Valley",
             "area": "Glacier",
             "elevation": 2800,
-            "temp_c": -6.4,
+            "temp_c": -6.6,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:30+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           },
           {
             "name": "Tiefenbach Glacier Mountain",
             "area": "Glacier",
             "elevation": 3250,
-            "temp_c": -9.7,
+            "temp_c": -9.8,
             "snow_cm": null,
-            "measured_at": "2026-11-22T21:20+01:00"
+            "measured_at": "2026-11-22T21:40+01:00"
           }
         ],
         "stations_source": "https://www.soelden.com/en/live-information/livecams",
         "stations_source_name": "Bergbahnen Sölden (Livecams)",
-        "stations_fetched_at": "2026-11-22T21:43+01:00",
+        "stations_fetched_at": "2026-11-22T21:55+01:00",
         "stations_stale": false,
         "stations_error": null,
         "model": {
@@ -1566,7 +1566,7 @@
           "summit_cm": 21,
           "new_24h_cm": 1.5,
           "new_72h_cm": 4.8,
-          "updated_at": "2026-11-22T21:43+01:00"
+          "updated_at": "2026-11-22T21:55+01:00"
         }
       },
       "weather": {
@@ -1580,7 +1580,7 @@
           "to": "2026-11-23T16:00",
           "max_gust": 38.5
         },
-        "updated_at": "2026-11-22T21:43+01:00",
+        "updated_at": "2026-11-22T21:55+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -1840,7 +1840,7 @@
         "open": 0,
         "expected_total": 31,
         "partial": true,
-        "fetched_at": "2026-11-22T21:44+01:00",
+        "fetched_at": "2026-11-22T21:56+01:00",
         "stale": true,
         "error": null,
         "note": "Quelle nennt nur OFFENE Lifte aus den Skigebietsnews (Gletscher-/Winterskigebiet). Nicht gelistete Lifte sind unbekannt, nicht geschlossen.",
@@ -1938,7 +1938,7 @@
             "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-22T21:43+01:00"
+        "updated_at": "2026-11-22T21:55+01:00"
       }
     },
     {
@@ -1988,7 +1988,7 @@
             "summit_cm": 0,
             "new_reported_cm": 0,
             "measured_at": null,
-            "fetched_at": "2026-11-22T21:43+01:00",
+            "fetched_at": "2026-11-22T21:55+01:00",
             "stale": false,
             "error": null
           },
@@ -2001,13 +2001,13 @@
             "summit_cm": 80,
             "new_reported_cm": 10,
             "measured_at": null,
-            "fetched_at": "2026-11-22T21:43+01:00",
+            "fetched_at": "2026-11-22T21:55+01:00",
             "stale": false,
             "error": null
           }
         ],
         "new_reported_cm": null,
-        "fetched_at": "2026-11-22T21:43+01:00",
+        "fetched_at": "2026-11-22T21:55+01:00",
         "source_name": null,
         "source_note": null,
         "error": null,
@@ -2018,7 +2018,7 @@
           "summit_cm": 0,
           "new_24h_cm": 0.0,
           "new_72h_cm": 0.0,
-          "updated_at": "2026-11-22T21:43+01:00"
+          "updated_at": "2026-11-22T21:55+01:00"
         }
       },
       "weather": {
@@ -2032,7 +2032,7 @@
           "to": "2026-11-23T16:00",
           "max_gust": 7.9
         },
-        "updated_at": "2026-11-22T21:43+01:00",
+        "updated_at": "2026-11-22T21:55+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -2510,7 +2510,7 @@
             "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-22T21:43+01:00"
+        "updated_at": "2026-11-22T21:55+01:00"
       }
     }
   ],
