@@ -2,8 +2,8 @@
   "meta": {
     "app": "Powderlog",
     "schema_version": 1,
-    "updated_at": null,
-    "updated_by": null,
+    "updated_at": "2026-11-22T17:39+01:00",
+    "updated_by": "update_agent.py",
     "notes": "Statische Felder sind Näherungswerte und vom Agenten zu verifizieren. Live-Felder (null) werden vom Update-Agenten gefüllt. Nie Werte erfinden: unbekannt = null. Webcams: nur Verweise auf die Betreiberseiten (page_url), keine eingebetteten Bilder; image_url bleibt null, bis eine offizielle Bild-URL freigegeben ist.",
     "units": {
       "depth": "cm",
@@ -92,7 +92,7 @@
         "new_72h_cm": null,
         "measured_at": null,
         "source_url": null,
-        "stale": null,
+        "stale": true,
         "sources": [
           {
             "name": "Tourismusverband Obertauern",
@@ -104,16 +104,26 @@
         "fetched_at": null,
         "source_name": null,
         "source_note": null,
-        "error": null
+        "error": "https://www.obertauern.com/en/snow-report.html: HTTP Error 404: Not Found",
+        "model": {
+          "source": "Open-Meteo Modell (kein Messwert vom Skigebiet)",
+          "base_cm": 3,
+          "summit_cm": 2,
+          "new_24h_cm": 0.3,
+          "new_72h_cm": 3.1,
+          "updated_at": "2026-11-22T17:38+01:00"
+        }
       },
       "weather": {
-        "temp_base": null,
-        "temp_summit": null,
-        "wind_summit": null,
-        "gusts": null,
-        "freezing_level": null,
+        "temp_base": -1.0,
+        "temp_summit": -4.4,
+        "wind_summit": 7.0,
+        "gusts": 18.0,
+        "freezing_level": 1850.0,
         "forecast_window": null,
-        "updated_at": null
+        "updated_at": "2026-11-22T17:38+01:00",
+        "source": "Open-Meteo",
+        "source_note": null
       },
       "avalanche": {
         "level": null,
@@ -124,7 +134,8 @@
         "bulletin_url": null,
         "region_ids": [],
         "stale": null,
-        "error": null
+        "error": null,
+        "note": "region_ids fehlen: IDs mit --probe ermitteln und unter avalanche.region_ids eintragen"
       },
       "webcams": [
         {
@@ -279,16 +290,228 @@
         "https://www.obertauern.com/en/service-info/webcam.html"
       ],
       "lift_status": {
-        "items": [],
-        "listed": null,
-        "open": null,
+        "items": [
+          {
+            "name": "Achenrain",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Anger",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Edelweiß",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Gamskarlift",
+            "type": "Tow lift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Gamsleiten 1",
+            "type": "6 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Gamsleiten 2",
+            "type": "2 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Grünwaldkopf",
+            "type": "Combined lift",
+            "hours": null,
+            "status": "open",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Hochalm",
+            "type": "6 seat chairlift",
+            "hours": null,
+            "status": "open",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Hundskogel",
+            "type": "6 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Kehrkopf",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Kirchbühellift",
+            "type": "Tow lift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Kringsalm",
+            "type": "6 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Monte Flu",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Panorama",
+            "type": "6 seat chairlift",
+            "hours": null,
+            "status": "open",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Pernerlift",
+            "type": "Tow lift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Plattenkar",
+            "type": "Combined lift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Schaidberg",
+            "type": "6 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Schrotteralmlift",
+            "type": "Tow lift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Schönalm",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Seekareck",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Seekarspitz",
+            "type": "8 seat chairlift",
+            "hours": null,
+            "status": "open",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Sonnenlift 1",
+            "type": "2 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Sonnenlift 3",
+            "type": "Tow lift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Zehnerkar",
+            "type": "8 seat gondola",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Zentral",
+            "type": "4 seat chairlift",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          },
+          {
+            "name": "Übungslift",
+            "type": "Conveyor belt",
+            "hours": null,
+            "status": "closed",
+            "area": "Obertauern",
+            "stale": false
+          }
+        ],
+        "listed": 26,
+        "open": 4,
         "expected_total": 26,
-        "partial": null,
-        "fetched_at": null,
-        "stale": null,
+        "partial": false,
+        "fetched_at": "2026-11-22T17:39+01:00",
+        "stale": false,
         "error": null,
         "note": "Status aus Symbolen der Seite; unbekannte Symbole werden als 'unknown' gespeichert.",
-        "mode": "icon_table"
+        "mode": "icon_table",
+        "sources": [
+          "https://www.ski-obertauern.at/en/lifts-pists/open-lifts"
+        ]
       },
       "lift_sources": {
         "parser": "icon_table",
@@ -307,6 +530,86 @@
             "url": "https://www.ski-obertauern.at/en/lifts-pists/open-lifts"
           }
         ]
+      },
+      "forecast": {
+        "place": "Obertauern",
+        "source": "Open-Meteo",
+        "asof": "22.11.2026",
+        "current": null,
+        "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
+        "daily": [
+          {
+            "date": "2026-11-22",
+            "d": "So 22.11.",
+            "hi": 1.0,
+            "lo": -4.5,
+            "p": 55,
+            "t": "snow",
+            "snow_base_cm": 0.28,
+            "snow_summit_cm": 0.63
+          },
+          {
+            "date": "2026-11-23",
+            "d": "Mo 23.11.",
+            "hi": -3.7,
+            "lo": -6.8,
+            "p": 98,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-11-24",
+            "d": "Di 24.11.",
+            "hi": -2.7,
+            "lo": -6.9,
+            "p": 8,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-11-25",
+            "d": "Mi 25.11.",
+            "hi": 1.5,
+            "lo": -4.6,
+            "p": 72,
+            "t": "snow",
+            "snow_base_cm": 0.35,
+            "snow_summit_cm": 0.56
+          },
+          {
+            "date": "2026-11-26",
+            "d": "Do 26.11.",
+            "hi": -0.2,
+            "lo": -10.5,
+            "p": 85,
+            "t": "snow",
+            "snow_base_cm": 7.56,
+            "snow_summit_cm": 7.77
+          },
+          {
+            "date": "2026-11-27",
+            "d": "Fr 27.11.",
+            "hi": -4.1,
+            "lo": -12.6,
+            "p": 37,
+            "t": "snow",
+            "snow_base_cm": 0.42,
+            "snow_summit_cm": 0.42
+          },
+          {
+            "date": "2026-11-28",
+            "d": "Sa 28.11.",
+            "hi": 0.8,
+            "lo": -10.9,
+            "p": 10,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          }
+        ],
+        "updated_at": "2026-11-22T17:38+01:00"
       }
     },
     {
@@ -355,20 +658,61 @@
           }
         ],
         "new_reported_cm": null,
-        "fetched_at": null,
+        "fetched_at": "2026-11-22T17:39+01:00",
         "source_name": null,
         "source_note": null,
         "error": null,
-        "areas": []
+        "areas": [
+          {
+            "area": "St. Anton (Tirol)",
+            "name": "Tirol Werbung (St. Anton)",
+            "url": "https://www.tirol.at/reiseservice/schneehoehen/schneehoehen-st-anton",
+            "note": null,
+            "base_cm": 0,
+            "summit_cm": 0,
+            "new_reported_cm": 0,
+            "measured_at": null,
+            "fetched_at": "2026-11-22T17:39+01:00",
+            "stale": false,
+            "error": null
+          },
+          {
+            "area": "Lech Zürs (Vorarlberg)",
+            "name": "Lech Zürs Tourismus",
+            "url": "https://www.lechzuers.com/en/snow-report",
+            "note": "Werte für das Skigebiet Lech Zürs",
+            "base_cm": null,
+            "summit_cm": null,
+            "new_reported_cm": null,
+            "measured_at": null,
+            "fetched_at": "2026-11-22T17:39+01:00",
+            "stale": false,
+            "error": null
+          }
+        ],
+        "model": {
+          "source": "Open-Meteo Modell (kein Messwert vom Skigebiet)",
+          "base_cm": 13,
+          "summit_cm": 18,
+          "new_24h_cm": 4.6,
+          "new_72h_cm": 30.0,
+          "updated_at": "2026-11-22T17:38+01:00"
+        }
       },
       "weather": {
-        "temp_base": null,
-        "temp_summit": null,
-        "wind_summit": null,
-        "gusts": null,
-        "freezing_level": null,
-        "forecast_window": null,
-        "updated_at": null
+        "temp_base": 3.0,
+        "temp_summit": -7.1,
+        "wind_summit": 24.6,
+        "gusts": 50.8,
+        "freezing_level": 2080.0,
+        "forecast_window": {
+          "from": "2026-11-23T10:00",
+          "to": "2026-11-23T16:00",
+          "max_gust": 37.1
+        },
+        "updated_at": "2026-11-22T17:38+01:00",
+        "source": "Open-Meteo",
+        "source_note": null
       },
       "avalanche": {
         "level": null,
@@ -379,7 +723,8 @@
         "bulletin_url": null,
         "region_ids": [],
         "stale": null,
-        "error": null
+        "error": null,
+        "note": "region_ids fehlen: IDs mit --probe ermitteln und unter avalanche.region_ids eintragen"
       },
       "webcams": [
         {
@@ -722,16 +1067,262 @@
         "https://www.lechzuers.com/en/live-infos/webcams"
       ],
       "lift_status": {
-        "items": [],
-        "listed": null,
-        "open": null,
+        "items": [
+          {
+            "name": "Auenfeldjet",
+            "status": "closed",
+            "type": "Cable car",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Babylift Zürs",
+            "status": "closed",
+            "type": "T-bar",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Balmengratlift",
+            "status": "closed",
+            "type": "T-bar",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Bergbahn Lech-Oberlech",
+            "status": "closed",
+            "type": "Cable car",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Flexenbahn",
+            "status": "closed",
+            "type": "Cable car",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Hasensprungbahn",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Hexenbodenbahn",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Hinterwieslift",
+            "status": "closed",
+            "type": "T-bar",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Kriegerhornbahn",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Madlochbahn",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "Lech – Oberlech – Zürs",
+            "stale": false
+          },
+          {
+            "name": "Albonabahn I",
+            "status": "closed",
+            "type": "Cable car",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Albonabahn II",
+            "status": "closed",
+            "type": "Cable car",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Albonagratbahn",
+            "status": "closed",
+            "type": "2-chair lift",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Angerlift",
+            "status": "closed",
+            "type": "T-bar",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Arlenmähderbahn",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Fangbahn",
+            "status": "closed",
+            "type": "4-chair lift",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Galzigbahn",
+            "status": "closed",
+            "type": "Funitel",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Gampbergbahn",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Gampenbahn",
+            "status": "closed",
+            "type": "4-chair lift",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Kapallbahn",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "St. Anton – St. Christoph – Stuben",
+            "stale": false
+          },
+          {
+            "name": "Dorfbahn Warth",
+            "status": "closed",
+            "type": "Cable car",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Hochalpbahn",
+            "status": "closed",
+            "type": "4-chair lift",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Jägeralp-Express",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Karhornbahn",
+            "status": "closed",
+            "type": "2-chair lift",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Kitzeliftle (Übungslift)",
+            "status": "closed",
+            "type": "T-bar",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Kuchlbahn",
+            "status": "closed",
+            "type": "2-chair lift",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Körbliftle",
+            "status": "closed",
+            "type": "T-bar",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Salober-Jet",
+            "status": "closed",
+            "type": "6-chair lift",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Ski-Schaukel-Falken (Körbersee)",
+            "status": "closed",
+            "type": "2-chair lift",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          },
+          {
+            "name": "Ski-Schaukel-Falken (Spielboden)",
+            "status": "closed",
+            "type": "2-chair lift",
+            "hours": null,
+            "area": "Warth-Schröcken",
+            "stale": false
+          }
+        ],
+        "listed": 30,
+        "open": 0,
         "expected_total": 85,
-        "partial": null,
-        "fetched_at": null,
-        "stale": null,
+        "partial": true,
+        "fetched_at": "2026-11-22T17:39+01:00",
+        "stale": false,
         "error": null,
         "note": null,
-        "mode": "table"
+        "mode": "table",
+        "sources": [
+          "https://www.skiarlberg.at/en/st-anton/live-info/cable-cars-lifts",
+          "https://www.skiarlberg.at/en/lech-zuers/live-info/cable-cars-lifts",
+          "https://www.skiarlberg.at/en/warth-schroecken/live-info/cable-cars-lifts"
+        ]
       },
       "lift_sources": {
         "expected_total": 85,
@@ -749,6 +1340,86 @@
             "url": "https://www.skiarlberg.at/en/warth-schroecken/live-info/cable-cars-lifts"
           }
         ]
+      },
+      "forecast": {
+        "place": "Ski Arlberg",
+        "source": "Open-Meteo",
+        "asof": "22.11.2026",
+        "current": null,
+        "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
+        "daily": [
+          {
+            "date": "2026-11-22",
+            "d": "So 22.11.",
+            "hi": 4.5,
+            "lo": -0.5,
+            "p": 100,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 9.87
+          },
+          {
+            "date": "2026-11-23",
+            "d": "Mo 23.11.",
+            "hi": 0.6,
+            "lo": -1.6,
+            "p": 100,
+            "t": "snow",
+            "snow_base_cm": 3.87,
+            "snow_summit_cm": 6.86
+          },
+          {
+            "date": "2026-11-24",
+            "d": "Di 24.11.",
+            "hi": 2.8,
+            "lo": -3.6,
+            "p": 45,
+            "t": "snow",
+            "snow_base_cm": 2.38,
+            "snow_summit_cm": 3.01
+          },
+          {
+            "date": "2026-11-25",
+            "d": "Mi 25.11.",
+            "hi": 4.2,
+            "lo": -1.3,
+            "p": 61,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.35
+          },
+          {
+            "date": "2026-11-26",
+            "d": "Do 26.11.",
+            "hi": 0.3,
+            "lo": -4.6,
+            "p": 68,
+            "t": "snow",
+            "snow_base_cm": 0.42,
+            "snow_summit_cm": 0.63
+          },
+          {
+            "date": "2026-11-27",
+            "d": "Fr 27.11.",
+            "hi": -1.4,
+            "lo": -7.5,
+            "p": 33,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-11-28",
+            "d": "Sa 28.11.",
+            "hi": 6.1,
+            "lo": -6.0,
+            "p": 18,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          }
+        ],
+        "updated_at": "2026-11-22T17:38+01:00"
       }
     },
     {
@@ -767,13 +1438,13 @@
       },
       "avalanche_region": "Ötztaler Alpen",
       "snow": {
-        "base_cm": null,
-        "summit_cm": null,
+        "base_cm": 0,
+        "summit_cm": 81,
         "new_24h_cm": null,
         "new_72h_cm": null,
         "measured_at": null,
-        "source_url": null,
-        "stale": null,
+        "source_url": "https://www.tirol.at/reiseservice/schneehoehen/schneehoehen-soelden",
+        "stale": false,
         "sources": [
           {
             "name": "Tirol Werbung (Sölden)",
@@ -781,26 +1452,137 @@
             "note": null
           }
         ],
-        "new_reported_cm": null,
-        "fetched_at": null,
-        "source_name": null,
+        "new_reported_cm": 0,
+        "fetched_at": "2026-11-22T17:39+01:00",
+        "source_name": "Tirol Werbung (Sölden)",
         "source_note": null,
         "error": null,
-        "stations": [],
-        "stations_source": null,
-        "stations_source_name": null,
-        "stations_fetched_at": null,
-        "stations_stale": null,
-        "stations_error": null
+        "stations": [
+          {
+            "name": "Village view",
+            "area": "Sölden",
+            "elevation": 1377,
+            "temp_c": 2.3,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          },
+          {
+            "name": "Gaislachkogl",
+            "area": "Gaislachkogl",
+            "elevation": 3048,
+            "temp_c": -5.7,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T16:34+01:00"
+          },
+          {
+            "name": "Gaislachkogl Mid Station",
+            "area": "Gaislachkogl",
+            "elevation": 2174,
+            "temp_c": -4.0,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          },
+          {
+            "name": "Hochsölden",
+            "area": "Giggijoch",
+            "elevation": 2077,
+            "temp_c": -3.9,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          },
+          {
+            "name": "Giggijoch",
+            "area": "Giggijoch",
+            "elevation": 2290,
+            "temp_c": -4.4,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T16:39+01:00"
+          },
+          {
+            "name": "Schwarzkogl Valley",
+            "area": "Giggijoch",
+            "elevation": 2580,
+            "temp_c": -2.5,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          },
+          {
+            "name": "Seekogl",
+            "area": "Giggijoch",
+            "elevation": 2662,
+            "temp_c": -5.5,
+            "snow_cm": 35.4,
+            "measured_at": "2026-11-22T16:35+01:00"
+          },
+          {
+            "name": "Rettenbach Glacier",
+            "area": "Glacier",
+            "elevation": 2680,
+            "temp_c": -2.9,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          },
+          {
+            "name": "Schwarze Schneidbahn Middle Station",
+            "area": "Glacier",
+            "elevation": 3000,
+            "temp_c": -6.1,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T16:35+01:00"
+          },
+          {
+            "name": "Schwarze Schneidbahn Mid Station",
+            "area": "Glacier",
+            "elevation": 3000,
+            "temp_c": -6.1,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          },
+          {
+            "name": "Tiefenbach Glacier Valley",
+            "area": "Glacier",
+            "elevation": 2800,
+            "temp_c": -4.3,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          },
+          {
+            "name": "Tiefenbach Glacier Mountain",
+            "area": "Glacier",
+            "elevation": 3250,
+            "temp_c": -7.7,
+            "snow_cm": null,
+            "measured_at": "2026-11-22T17:20+01:00"
+          }
+        ],
+        "stations_source": "https://www.soelden.com/en/live-information/livecams",
+        "stations_source_name": "Bergbahnen Sölden (Livecams)",
+        "stations_fetched_at": "2026-11-22T17:39+01:00",
+        "stations_stale": false,
+        "stations_error": null,
+        "model": {
+          "source": "Open-Meteo Modell (kein Messwert vom Skigebiet)",
+          "base_cm": 3,
+          "summit_cm": 21,
+          "new_24h_cm": 1.1,
+          "new_72h_cm": 4.4,
+          "updated_at": "2026-11-22T17:38+01:00"
+        }
       },
       "weather": {
-        "temp_base": null,
-        "temp_summit": null,
-        "wind_summit": null,
-        "gusts": null,
-        "freezing_level": null,
-        "forecast_window": null,
-        "updated_at": null
+        "temp_base": 3.9,
+        "temp_summit": -8.1,
+        "wind_summit": 22.8,
+        "gusts": 46.4,
+        "freezing_level": 2380.0,
+        "forecast_window": {
+          "from": "2026-11-23T11:00",
+          "to": "2026-11-23T16:00",
+          "max_gust": 34.6
+        },
+        "updated_at": "2026-11-22T17:38+01:00",
+        "source": "Open-Meteo",
+        "source_note": null
       },
       "avalanche": {
         "level": null,
@@ -811,7 +1593,8 @@
         "bulletin_url": null,
         "region_ids": [],
         "stale": null,
-        "error": null
+        "error": null,
+        "note": "region_ids fehlen: IDs mit --probe ermitteln und unter avalanche.region_ids eintragen"
       },
       "webcams": [
         {
@@ -1033,16 +1816,38 @@
         "https://soelden.com/en/live-information/livecams"
       ],
       "lift_status": {
-        "items": [],
-        "listed": null,
-        "open": null,
+        "items": [
+          {
+            "name": "Hochsölden-Rotkoglbahn",
+            "type": "10EUB",
+            "hours": null,
+            "status": "open",
+            "listed_for": "2026-11-20",
+            "stale": true,
+            "area": "Sölden"
+          },
+          {
+            "name": "Roßkirpl",
+            "type": "4SK",
+            "hours": null,
+            "status": "open",
+            "listed_for": "2026-11-20",
+            "stale": true,
+            "area": "Sölden"
+          }
+        ],
+        "listed": 2,
+        "open": 0,
         "expected_total": 31,
-        "partial": null,
-        "fetched_at": null,
-        "stale": null,
+        "partial": true,
+        "fetched_at": "2026-11-22T17:39+01:00",
+        "stale": true,
         "error": null,
         "note": "Quelle nennt nur OFFENE Lifte aus den Skigebietsnews (Gletscher-/Winterskigebiet). Nicht gelistete Lifte sind unbekannt, nicht geschlossen.",
-        "mode": "open_list"
+        "mode": "open_list",
+        "sources": [
+          "https://www.soelden.com/en/live-information/ski-resort-news"
+        ]
       },
       "lift_sources": {
         "parser": "open_list",
@@ -1054,6 +1859,86 @@
             "url": "https://www.soelden.com/en/live-information/ski-resort-news"
           }
         ]
+      },
+      "forecast": {
+        "place": "Sölden",
+        "source": "Open-Meteo",
+        "asof": "22.11.2026",
+        "current": null,
+        "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
+        "daily": [
+          {
+            "date": "2026-11-22",
+            "d": "So 22.11.",
+            "hi": 5.1,
+            "lo": -3.3,
+            "p": 100,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 2.52
+          },
+          {
+            "date": "2026-11-23",
+            "d": "Mo 23.11.",
+            "hi": 1.0,
+            "lo": -5.0,
+            "p": 100,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.44
+          },
+          {
+            "date": "2026-11-24",
+            "d": "Di 24.11.",
+            "hi": 2.0,
+            "lo": -6.7,
+            "p": 33,
+            "t": "snow",
+            "snow_base_cm": 1.4,
+            "snow_summit_cm": 1.54
+          },
+          {
+            "date": "2026-11-25",
+            "d": "Mi 25.11.",
+            "hi": 3.9,
+            "lo": -1.2,
+            "p": 60,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.91
+          },
+          {
+            "date": "2026-11-26",
+            "d": "Do 26.11.",
+            "hi": 2.1,
+            "lo": -4.1,
+            "p": 60,
+            "t": "snow",
+            "snow_base_cm": 0.84,
+            "snow_summit_cm": 4.48
+          },
+          {
+            "date": "2026-11-27",
+            "d": "Fr 27.11.",
+            "hi": 0.4,
+            "lo": -6.5,
+            "p": 22,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-11-28",
+            "d": "Sa 28.11.",
+            "hi": 6.7,
+            "lo": -3.2,
+            "p": 5,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          }
+        ],
+        "updated_at": "2026-11-22T17:38+01:00"
       }
     },
     {
@@ -1093,22 +1978,63 @@
             "note": null
           }
         ],
-        "areas": [],
+        "areas": [
+          {
+            "area": "Mayrhofen (Penken/Ahorn)",
+            "name": "Tirol Werbung (Mayrhofen)",
+            "url": "https://www.tirol.at/orte/a-mayrhofen/schneehoehen",
+            "note": null,
+            "base_cm": 0,
+            "summit_cm": 0,
+            "new_reported_cm": 0,
+            "measured_at": null,
+            "fetched_at": "2026-11-22T17:39+01:00",
+            "stale": false,
+            "error": null
+          },
+          {
+            "area": "Zell-Gerlos (Zillertal Arena)",
+            "name": "Tirol Werbung (Zell am Ziller)",
+            "url": "https://www.tirol.at/reiseservice/schneehoehen/schneehoehen-zell-am-ziller",
+            "note": null,
+            "base_cm": 50,
+            "summit_cm": 80,
+            "new_reported_cm": 10,
+            "measured_at": null,
+            "fetched_at": "2026-11-22T17:39+01:00",
+            "stale": false,
+            "error": null
+          }
+        ],
         "new_reported_cm": null,
-        "fetched_at": null,
+        "fetched_at": "2026-11-22T17:39+01:00",
         "source_name": null,
         "source_note": null,
         "error": null,
-        "coverage_note": "Nur Mayrhofen und Zell-Gerlos angebunden. Hintertuxer Gletscher und Hochzillertal/Fügen haben noch keine geprüfte Schnee-Quelle."
+        "coverage_note": "Nur Mayrhofen und Zell-Gerlos angebunden. Hintertuxer Gletscher und Hochzillertal/Fügen haben noch keine geprüfte Schnee-Quelle.",
+        "model": {
+          "source": "Open-Meteo Modell (kein Messwert vom Skigebiet)",
+          "base_cm": 0,
+          "summit_cm": 0,
+          "new_24h_cm": 0.0,
+          "new_72h_cm": 0.0,
+          "updated_at": "2026-11-22T17:38+01:00"
+        }
       },
       "weather": {
-        "temp_base": null,
-        "temp_summit": null,
-        "wind_summit": null,
-        "gusts": null,
-        "freezing_level": null,
-        "forecast_window": null,
-        "updated_at": null
+        "temp_base": 3.7,
+        "temp_summit": -13.6,
+        "wind_summit": 1.0,
+        "gusts": 4.0,
+        "freezing_level": 1200.0,
+        "forecast_window": {
+          "from": "2026-11-23T08:00",
+          "to": "2026-11-23T16:00",
+          "max_gust": 6.8
+        },
+        "updated_at": "2026-11-22T17:38+01:00",
+        "source": "Open-Meteo",
+        "source_note": null
       },
       "avalanche": {
         "level": null,
@@ -1119,7 +2045,8 @@
         "bulletin_url": null,
         "region_ids": [],
         "stale": null,
-        "error": null
+        "error": null,
+        "note": "region_ids fehlen: IDs mit --probe ermitteln und unter avalanche.region_ids eintragen"
       },
       "webcams": [
         {
@@ -1504,7 +2431,87 @@
         "Tux-Finkenberg (Hintertuxer Gletscher, Zillertal 3000)",
         "Zell-Gerlos (Zillertal Arena)",
         "Hochzillertal-Hochfügen-Fügen"
-      ]
+      ],
+      "forecast": {
+        "place": "Zillertal",
+        "source": "Open-Meteo",
+        "asof": "22.11.2026",
+        "current": null,
+        "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
+        "daily": [
+          {
+            "date": "2026-11-22",
+            "d": "So 22.11.",
+            "hi": 8.1,
+            "lo": -0.3,
+            "p": 100,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.49
+          },
+          {
+            "date": "2026-11-23",
+            "d": "Mo 23.11.",
+            "hi": 4.4,
+            "lo": -0.3,
+            "p": 100,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-11-24",
+            "d": "Di 24.11.",
+            "hi": 5.1,
+            "lo": -0.5,
+            "p": 13,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-11-25",
+            "d": "Mi 25.11.",
+            "hi": 9.8,
+            "lo": 4.8,
+            "p": 56,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 1.89
+          },
+          {
+            "date": "2026-11-26",
+            "d": "Do 26.11.",
+            "hi": 6.8,
+            "lo": 0.2,
+            "p": 70,
+            "t": "snow",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 7.42
+          },
+          {
+            "date": "2026-11-27",
+            "d": "Fr 27.11.",
+            "hi": 2.9,
+            "lo": -1.0,
+            "p": 32,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-11-28",
+            "d": "Sa 28.11.",
+            "hi": 8.9,
+            "lo": -0.8,
+            "p": 14,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
+          }
+        ],
+        "updated_at": "2026-11-22T17:38+01:00"
+      }
     }
   ],
   "templates": {
