@@ -1,0 +1,46 @@
+# Gehört in dein GitHub-Repository nach: .github/workflows/update-data.yml
+# Holt alle 3 Stunden Wetter, Schnee, Lifte und Lawinenbericht und speichert sie in data.json.
+# Die App (index.html, über GitHub Pages) lädt data.json automatisch.
+name: Update Powderlog data
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"      # alle 3 Stunden (UTC); GitHub kann den Start um einige Minuten verzögern
+  workflow_dispatch: {}          # zusätzlich per Knopf "Run workflow" startbar
+
+permissions:
+  contents: write
+
+concurrency:
+  group: powderlog-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      POWDERLOG_CONTACT: ${{ vars.POWDERLOG_CONTACT }}   # deine E-Mail, wird im User-Agent mitgesendet (MET Norway verlangt das)
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Jeder Schritt darf einzeln scheitern, die anderen laufen weiter. Fehler stehen im Log und in data.json.
+      - name: Wetter
+        continue-on-error: true
+        run: python update_agent.py --file data.json --only weather
+      - name: Schneehöhe
+        continue-on-error: true
+        run: python update_agent.py --file data.json --only snow
+      - name: Lifte
+        continue-on-error: true
+        run: python update_agent.py --file data.json --only lifts
+      - name: Lawinenlagebericht
+        continue-on-error: true
+        run: python update_agent.py --file data.json --only avalanche
+      - name: Änderungen speichern
+        run: |
+          git config user.name "powderlog-bot"
+          git config user.email "powderlog-bot@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || (git commit -m "Daten aktualisiert" && git push)
