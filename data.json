@@ -2,7 +2,7 @@
   "meta": {
     "app": "Powderlog",
     "schema_version": 1,
-    "updated_at": "2026-11-24T23:13+01:00",
+    "updated_at": "2026-11-25T02:37+01:00",
     "updated_by": "update_agent.py",
     "notes": "Statische Felder sind Näherungswerte und vom Agenten zu verifizieren. Live-Felder (null) werden vom Update-Agenten gefüllt. Nie Werte erfinden: unbekannt = null. Webcams: nur Verweise auf die Betreiberseiten (page_url), keine eingebetteten Bilder; image_url bleibt null, bis eine offizielle Bild-URL freigegeben ist.",
     "units": {
@@ -111,21 +111,21 @@
           "summit_cm": 2,
           "new_24h_cm": 0.0,
           "new_72h_cm": 0.5,
-          "updated_at": "2026-11-24T23:12+01:00"
+          "updated_at": "2026-11-25T02:36+01:00"
         }
       },
       "weather": {
-        "temp_base": -6.7,
-        "temp_summit": -9.9,
-        "wind_summit": 11.1,
-        "gusts": 24.5,
-        "freezing_level": 1460.0,
+        "temp_base": -4.9,
+        "temp_summit": -9.3,
+        "wind_summit": 10.0,
+        "gusts": 22.3,
+        "freezing_level": 1510.0,
         "forecast_window": {
           "from": "2026-11-25T08:00",
           "to": "2026-11-25T16:00",
-          "max_gust": 36.7
+          "max_gust": 39.2
         },
-        "updated_at": "2026-11-24T23:12+01:00",
+        "updated_at": "2026-11-25T02:36+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -508,7 +508,7 @@
         "open": 4,
         "expected_total": 26,
         "partial": false,
-        "fetched_at": "2026-11-24T23:13+01:00",
+        "fetched_at": "2026-11-25T02:37+01:00",
         "stale": false,
         "error": null,
         "note": "Status aus Symbolen der Seite; unbekannte Symbole werden als 'unknown' gespeichert.",
@@ -538,26 +538,16 @@
       "forecast": {
         "place": "Obertauern",
         "source": "Open-Meteo",
-        "asof": "24.11.2026",
+        "asof": "25.11.2026",
         "current": null,
         "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
         "daily": [
           {
-            "date": "2026-11-24",
-            "d": "Di 24.11.",
-            "hi": -2.1,
-            "lo": -7.9,
-            "p": 43,
-            "t": "precip",
-            "snow_base_cm": 0.0,
-            "snow_summit_cm": 0.0
-          },
-          {
             "date": "2026-11-25",
             "d": "Mi 25.11.",
             "hi": 1.9,
-            "lo": -5.2,
-            "p": 15,
+            "lo": -5.8,
+            "p": 3,
             "t": "precip",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.0
@@ -566,20 +556,20 @@
             "date": "2026-11-26",
             "d": "Do 26.11.",
             "hi": 0.5,
-            "lo": -6.4,
+            "lo": -5.8,
             "p": 98,
             "t": "snow",
-            "snow_base_cm": 7.49,
-            "snow_summit_cm": 7.54
+            "snow_base_cm": 5.36,
+            "snow_summit_cm": 5.62
           },
           {
             "date": "2026-11-27",
             "d": "Fr 27.11.",
             "hi": -4.9,
             "lo": -7.7,
-            "p": 33,
+            "p": 40,
             "t": "snow",
-            "snow_base_cm": 0.77,
+            "snow_base_cm": 0.73,
             "snow_summit_cm": 0.98
           },
           {
@@ -587,7 +577,7 @@
             "d": "Sa 28.11.",
             "hi": -2.2,
             "lo": -9.7,
-            "p": 7,
+            "p": 0,
             "t": "precip",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.0
@@ -611,9 +601,19 @@
             "t": "snow",
             "snow_base_cm": 1.47,
             "snow_summit_cm": 1.47
+          },
+          {
+            "date": "2026-12-01",
+            "d": "Di 01.12.",
+            "hi": -3.2,
+            "lo": -12.4,
+            "p": 16,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-24T23:12+01:00"
+        "updated_at": "2026-11-25T02:36+01:00"
       }
     },
     {
@@ -662,7 +662,7 @@
           }
         ],
         "new_reported_cm": null,
-        "fetched_at": "2026-11-24T23:12+01:00",
+        "fetched_at": "2026-11-25T02:36+01:00",
         "source_name": null,
         "source_note": null,
         "error": "Lech Zürs (Vorarlberg): keine Schneehöhen im Seitentext gefunden (Seite geändert, per JavaScript geladen oder keine Meldung)",
@@ -676,7 +676,7 @@
             "summit_cm": 0,
             "new_reported_cm": 0,
             "measured_at": null,
-            "fetched_at": "2026-11-24T23:12+01:00",
+            "fetched_at": "2026-11-25T02:36+01:00",
             "stale": false,
             "error": null
           },
@@ -689,32 +689,32 @@
             "summit_cm": null,
             "new_reported_cm": null,
             "measured_at": null,
-            "fetched_at": "2026-11-24T23:12+01:00",
+            "fetched_at": "2026-11-25T02:36+01:00",
             "stale": true,
             "error": "keine Schneehöhen im Seitentext gefunden (Seite geändert, per JavaScript geladen oder keine Meldung)"
           }
         ],
         "model": {
           "source": "Open-Meteo Modell (kein Messwert vom Skigebiet)",
-          "base_cm": 33,
-          "summit_cm": 35,
+          "base_cm": 32,
+          "summit_cm": 31,
           "new_24h_cm": 0.1,
           "new_72h_cm": 10.1,
-          "updated_at": "2026-11-24T23:12+01:00"
+          "updated_at": "2026-11-25T02:36+01:00"
         }
       },
       "weather": {
-        "temp_base": 1.2,
-        "temp_summit": -7.6,
-        "wind_summit": 7.5,
-        "gusts": 24.8,
-        "freezing_level": 2040.0,
+        "temp_base": 1.7,
+        "temp_summit": -7.3,
+        "wind_summit": 9.5,
+        "gusts": 27.0,
+        "freezing_level": 2070.0,
         "forecast_window": {
-          "from": "2026-11-26T08:00",
+          "from": "2026-11-26T13:00",
           "to": "2026-11-26T16:00",
-          "max_gust": 38.2
+          "max_gust": 37.8
         },
-        "updated_at": "2026-11-24T23:12+01:00",
+        "updated_at": "2026-11-25T02:36+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -1317,7 +1317,7 @@
         "open": 0,
         "expected_total": 85,
         "partial": true,
-        "fetched_at": "2026-11-24T23:13+01:00",
+        "fetched_at": "2026-11-25T02:37+01:00",
         "stale": false,
         "error": null,
         "note": null,
@@ -1348,46 +1348,36 @@
       "forecast": {
         "place": "Ski Arlberg",
         "source": "Open-Meteo",
-        "asof": "24.11.2026",
+        "asof": "25.11.2026",
         "current": null,
         "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
         "daily": [
           {
-            "date": "2026-11-24",
-            "d": "Di 24.11.",
-            "hi": 3.2,
-            "lo": -2.7,
-            "p": 53,
-            "t": "snow",
-            "snow_base_cm": 0.07,
-            "snow_summit_cm": 0.14
-          },
-          {
             "date": "2026-11-25",
             "d": "Mi 25.11.",
-            "hi": 6.1,
-            "lo": 1.4,
-            "p": 20,
+            "hi": 6.0,
+            "lo": 1.2,
+            "p": 10,
             "t": "snow",
             "snow_base_cm": 0.0,
-            "snow_summit_cm": 0.19
+            "snow_summit_cm": 0.14
           },
           {
             "date": "2026-11-26",
             "d": "Do 26.11.",
-            "hi": 1.5,
-            "lo": -3.3,
-            "p": 78,
+            "hi": 1.8,
+            "lo": -3.1,
+            "p": 88,
             "t": "snow",
-            "snow_base_cm": 0.07,
-            "snow_summit_cm": 4.27
+            "snow_base_cm": 0.28,
+            "snow_summit_cm": 4.2
           },
           {
             "date": "2026-11-27",
             "d": "Fr 27.11.",
             "hi": -0.2,
             "lo": -7.7,
-            "p": 2,
+            "p": 8,
             "t": "precip",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.0
@@ -1421,9 +1411,19 @@
             "t": "precip",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-12-01",
+            "d": "Di 01.12.",
+            "hi": 2.9,
+            "lo": -5.5,
+            "p": 8,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-24T23:12+01:00"
+        "updated_at": "2026-11-25T02:36+01:00"
       }
     },
     {
@@ -1443,7 +1443,7 @@
       "avalanche_region": "Ötztaler Alpen",
       "snow": {
         "base_cm": 0,
-        "summit_cm": 68,
+        "summit_cm": 70,
         "new_24h_cm": null,
         "new_72h_cm": null,
         "measured_at": null,
@@ -1456,8 +1456,8 @@
             "note": null
           }
         ],
-        "new_reported_cm": 10,
-        "fetched_at": "2026-11-24T23:12+01:00",
+        "new_reported_cm": 0,
+        "fetched_at": "2026-11-25T02:36+01:00",
         "source_name": "Tirol Werbung (Sölden)",
         "source_note": null,
         "error": null,
@@ -1466,15 +1466,15 @@
             "name": "Village view",
             "area": "Sölden",
             "elevation": 1377,
-            "temp_c": -1.7,
+            "temp_c": 0.4,
             "snow_cm": null,
-            "measured_at": "2026-11-24T22:50+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           },
           {
             "name": "Gaislachkogl",
             "area": "Gaislachkogl",
             "elevation": 3048,
-            "temp_c": -5.9,
+            "temp_c": -6.6,
             "snow_cm": null,
             "measured_at": "2026-11-24T16:35+01:00"
           },
@@ -1482,23 +1482,23 @@
             "name": "Gaislachkogl Mid Station",
             "area": "Gaislachkogl",
             "elevation": 2174,
-            "temp_c": -5.2,
+            "temp_c": -3.4,
             "snow_cm": null,
-            "measured_at": "2026-11-24T22:50+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           },
           {
             "name": "Hochsölden",
             "area": "Giggijoch",
             "elevation": 2077,
-            "temp_c": -4.3,
+            "temp_c": -2.6,
             "snow_cm": null,
-            "measured_at": "2026-11-24T22:50+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           },
           {
             "name": "Giggijoch",
             "area": "Giggijoch",
             "elevation": 2290,
-            "temp_c": -4.5,
+            "temp_c": -4.2,
             "snow_cm": null,
             "measured_at": "2026-11-24T16:37+01:00"
           },
@@ -1506,31 +1506,31 @@
             "name": "Schwarzkogl Valley",
             "area": "Giggijoch",
             "elevation": 2580,
-            "temp_c": -6.0,
+            "temp_c": -5.3,
             "snow_cm": null,
-            "measured_at": "2026-11-24T23:00+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           },
           {
             "name": "Seekogl",
             "area": "Giggijoch",
             "elevation": 2662,
-            "temp_c": -7.5,
-            "snow_cm": 34.9,
+            "temp_c": -7.3,
+            "snow_cm": 35.2,
             "measured_at": "2026-11-24T16:34+01:00"
           },
           {
             "name": "Rettenbach Glacier",
             "area": "Glacier",
             "elevation": 2680,
-            "temp_c": -5.9,
+            "temp_c": -5.1,
             "snow_cm": null,
-            "measured_at": "2026-11-24T22:50+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           },
           {
             "name": "Schwarze Schneidbahn Middle Station",
             "area": "Glacier",
             "elevation": 3000,
-            "temp_c": -6.0,
+            "temp_c": -6.9,
             "snow_cm": null,
             "measured_at": "2026-11-24T16:35+01:00"
           },
@@ -1538,53 +1538,53 @@
             "name": "Schwarze Schneidbahn Mid Station",
             "area": "Glacier",
             "elevation": 3000,
-            "temp_c": -6.0,
+            "temp_c": -6.9,
             "snow_cm": null,
-            "measured_at": "2026-11-24T22:50+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           },
           {
             "name": "Tiefenbach Glacier Valley",
             "area": "Glacier",
             "elevation": 2800,
-            "temp_c": -4.8,
+            "temp_c": -5.2,
             "snow_cm": null,
-            "measured_at": "2026-11-24T23:00+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           },
           {
             "name": "Tiefenbach Glacier Mountain",
             "area": "Glacier",
             "elevation": 3250,
-            "temp_c": -6.9,
+            "temp_c": -8.3,
             "snow_cm": null,
-            "measured_at": "2026-11-24T22:50+01:00"
+            "measured_at": "2026-11-25T02:20+01:00"
           }
         ],
         "stations_source": "https://www.soelden.com/en/live-information/livecams",
         "stations_source_name": "Bergbahnen Sölden (Livecams)",
-        "stations_fetched_at": "2026-11-24T23:12+01:00",
+        "stations_fetched_at": "2026-11-25T02:36+01:00",
         "stations_stale": false,
         "stations_error": null,
         "model": {
           "source": "Open-Meteo Modell (kein Messwert vom Skigebiet)",
           "base_cm": 11,
-          "summit_cm": 31,
+          "summit_cm": 29,
           "new_24h_cm": 0.0,
           "new_72h_cm": 2.2,
-          "updated_at": "2026-11-24T23:12+01:00"
+          "updated_at": "2026-11-25T02:36+01:00"
         }
       },
       "weather": {
-        "temp_base": -4.1,
+        "temp_base": -0.4,
         "temp_summit": -10.5,
-        "wind_summit": 12.1,
-        "gusts": 22.7,
+        "wind_summit": 11.7,
+        "gusts": 20.9,
         "freezing_level": 2210.0,
         "forecast_window": {
           "from": "2026-11-25T08:00",
           "to": "2026-11-25T16:00",
-          "max_gust": 32.0
+          "max_gust": 30.6
         },
-        "updated_at": "2026-11-24T23:12+01:00",
+        "updated_at": "2026-11-25T02:36+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -1867,46 +1867,36 @@
       "forecast": {
         "place": "Sölden",
         "source": "Open-Meteo",
-        "asof": "24.11.2026",
+        "asof": "25.11.2026",
         "current": null,
         "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
         "daily": [
           {
-            "date": "2026-11-24",
-            "d": "Di 24.11.",
-            "hi": 2.7,
-            "lo": -8.2,
-            "p": 15,
-            "t": "precip",
-            "snow_base_cm": 0.0,
-            "snow_summit_cm": 0.0
-          },
-          {
             "date": "2026-11-25",
             "d": "Mi 25.11.",
-            "hi": 5.6,
-            "lo": -3.5,
-            "p": 25,
+            "hi": 5.4,
+            "lo": -2.1,
+            "p": 20,
             "t": "snow",
-            "snow_base_cm": 0.07,
-            "snow_summit_cm": 0.11
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.14
           },
           {
             "date": "2026-11-26",
             "d": "Do 26.11.",
-            "hi": 2.0,
-            "lo": -2.0,
+            "hi": 2.2,
+            "lo": -3.5,
             "p": 93,
             "t": "snow",
-            "snow_base_cm": 2.87,
-            "snow_summit_cm": 11.69
+            "snow_base_cm": 1.31,
+            "snow_summit_cm": 7.51
           },
           {
             "date": "2026-11-27",
             "d": "Fr 27.11.",
             "hi": 0.0,
             "lo": -5.8,
-            "p": 4,
+            "p": 18,
             "t": "precip",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.0
@@ -1940,9 +1930,19 @@
             "t": "precip",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.0
+          },
+          {
+            "date": "2026-12-01",
+            "d": "Di 01.12.",
+            "hi": 3.5,
+            "lo": -2.7,
+            "p": 3,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-24T23:12+01:00"
+        "updated_at": "2026-11-25T02:36+01:00"
       }
     },
     {
@@ -1992,7 +1992,7 @@
             "summit_cm": 0,
             "new_reported_cm": 0,
             "measured_at": null,
-            "fetched_at": "2026-11-24T23:13+01:00",
+            "fetched_at": "2026-11-25T02:37+01:00",
             "stale": false,
             "error": null
           },
@@ -2005,13 +2005,13 @@
             "summit_cm": 80,
             "new_reported_cm": 10,
             "measured_at": null,
-            "fetched_at": "2026-11-24T23:13+01:00",
+            "fetched_at": "2026-11-25T02:37+01:00",
             "stale": false,
             "error": null
           }
         ],
         "new_reported_cm": null,
-        "fetched_at": "2026-11-24T23:13+01:00",
+        "fetched_at": "2026-11-25T02:37+01:00",
         "source_name": null,
         "source_note": null,
         "error": null,
@@ -2022,21 +2022,21 @@
           "summit_cm": 0,
           "new_24h_cm": 0.0,
           "new_72h_cm": 0.0,
-          "updated_at": "2026-11-24T23:12+01:00"
+          "updated_at": "2026-11-25T02:36+01:00"
         }
       },
       "weather": {
-        "temp_base": 0.6,
-        "temp_summit": -16.8,
-        "wind_summit": 2.1,
-        "gusts": 2.5,
-        "freezing_level": 1890.0,
+        "temp_base": 3.4,
+        "temp_summit": -14.0,
+        "wind_summit": 5.9,
+        "gusts": 8.3,
+        "freezing_level": 1880.0,
         "forecast_window": {
           "from": "2026-11-25T08:00",
           "to": "2026-11-25T16:00",
-          "max_gust": 7.9
+          "max_gust": 8.6
         },
-        "updated_at": "2026-11-24T23:12+01:00",
+        "updated_at": "2026-11-25T02:36+01:00",
         "source": "Open-Meteo",
         "source_note": null
       },
@@ -2439,26 +2439,16 @@
       "forecast": {
         "place": "Zillertal",
         "source": "Open-Meteo",
-        "asof": "24.11.2026",
+        "asof": "25.11.2026",
         "current": null,
         "note": "Neuschnee in cm Höhe (Tal = Talstation, Berg = Gipfelbereich). Faustregel: 1 cm Neuschnee ≈ 1 l/m² Wasser (Pulver weniger).",
         "daily": [
           {
-            "date": "2026-11-24",
-            "d": "Di 24.11.",
-            "hi": 2.6,
-            "lo": -2.7,
-            "p": 0,
-            "t": "precip",
-            "snow_base_cm": 0.0,
-            "snow_summit_cm": 0.0
-          },
-          {
             "date": "2026-11-25",
             "d": "Mi 25.11.",
-            "hi": 10.6,
-            "lo": 2.4,
-            "p": 15,
+            "hi": 11.0,
+            "lo": 1.8,
+            "p": 5,
             "t": "precip",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.0
@@ -2466,22 +2456,22 @@
           {
             "date": "2026-11-26",
             "d": "Do 26.11.",
-            "hi": 4.7,
-            "lo": -0.3,
-            "p": 89,
+            "hi": 4.6,
+            "lo": -3.2,
+            "p": 83,
             "t": "snow",
-            "snow_base_cm": 1.75,
-            "snow_summit_cm": 14.23
+            "snow_base_cm": 1.45,
+            "snow_summit_cm": 4.95
           },
           {
             "date": "2026-11-27",
             "d": "Fr 27.11.",
             "hi": 3.4,
             "lo": -1.4,
-            "p": 15,
+            "p": 17,
             "t": "snow",
-            "snow_base_cm": 0.0,
-            "snow_summit_cm": 0.14
+            "snow_base_cm": 0.09,
+            "snow_summit_cm": 0.16
           },
           {
             "date": "2026-11-28",
@@ -2512,9 +2502,19 @@
             "t": "snow",
             "snow_base_cm": 0.0,
             "snow_summit_cm": 0.63
+          },
+          {
+            "date": "2026-12-01",
+            "d": "Di 01.12.",
+            "hi": 6.2,
+            "lo": 0.4,
+            "p": 4,
+            "t": "precip",
+            "snow_base_cm": 0.0,
+            "snow_summit_cm": 0.0
           }
         ],
-        "updated_at": "2026-11-24T23:12+01:00"
+        "updated_at": "2026-11-25T02:36+01:00"
       }
     }
   ],
